@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<App>
+    <WebPath>/oftp</WebPath>
+    <Disable>false</Disable>
+	
+    <UrlList>
+        <UrlCfg>
+            <Model>rout</Model>
+            <Name>rout</Name>
+            <DbName>oftpMysql</DbName>
+            <Url>/rout</Url>
+            <SqlTemplate>app/oftp/rout.select.xsl</SqlTemplate>
+            <OutType>application/json</OutType>
+        </UrlCfg>
+		
+		<UrlCfg>
+            <Model>node</Model>
+            <Name>node</Name>
+            <DbName>oftpMysql</DbName>
+            <Url>/node</Url>
+            <SqlTemplate>app/oftp/rout.node.xsl</SqlTemplate>
+            <OutType>application/json</OutType>
+        </UrlCfg>
+		
+		<UrlCfg>
+            <Model>update</Model>
+            <Name>update</Name>
+            <DbName>oftpMysql</DbName>
+            <Url>/rout/update</Url>
+            <SqlTemplate>app/oftp/rout.update.xsl</SqlTemplate>
+            <OutType>application/json</OutType>
+			<Status>1</Status>
+        </UrlCfg>
+		
+		<UrlCfg>
+            <Model>insert</Model>
+            <Name>insert</Name>
+            <DbName>oftpMysql</DbName>
+            <Url>/rout/insert</Url>
+            <SqlTemplate>app/oftp/rout.insert.xsl</SqlTemplate>
+            <OutType>application/json</OutType>
+			<Status>1</Status>
+        </UrlCfg>
+		
+    </UrlList>
+</App>
